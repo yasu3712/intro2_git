@@ -1,7 +1,13 @@
 gitの練習をします。
 基本的なワークフローを学びます。
-git add
+git add . ：
 git commit
-git rm
-git status
-git diff
+git rm ファイル名　:ファイル削除、およびgitの管理から削除する
+git rm --cached ファイル名 :gitの管理から削除する
+git status :commit後からの差分
+git diff ：ローカルとステージングの差分
+git diff head ：ステージングとcommitとの差分
+git remote add origin https://github.com/yasu3712/intro2_git ：リモートリポジトリエイリアス登録(originがデフォルト名)
+git push origin main　：リモートリポジトリにmainブランチをpush
+git reset HEAD ファイル名 :gitの管理へ戻す
+git checkout ファイル名　：ローカルにファイルを戻す
