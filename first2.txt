@@ -11,3 +11,4 @@ git remote add origin https://github.com/yasu3712/intro2_git ：リモートリ�
 git push origin main　：リモートリポジトリにmainブランチをpush
 git reset HEAD ファイル名 :gitの管理へ戻す
 git checkout ファイル名　：ローカルにファイルを戻す
+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
