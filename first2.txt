@@ -18,3 +18,14 @@ git config --global alias.ci commit
 git config --global alias.st status
 git config --global alias.br branch
 git config --global alias.co checkout
+
+.gitignore
+#から始まる行はコメント
+
+
+変更取り消し
+git checkout -- ファイル名　：ファイルへの変更を取り消す
+git checkout -- ディレクトリ名　：ディレクトリへの変更を取り消す
+git checkout -- .　：全変更取り消し
+--をつけるのはブランチ名とファイル名が被ったときにどちらのことか分かるようにするため
+
