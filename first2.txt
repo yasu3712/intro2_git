@@ -33,6 +33,7 @@ git checkout -- .　：全変更取り消し
 git reset HEAD ファイル名　：ファイルへの変更を取り消す
 git reset HEAD ディレクトリ名　：ディレクトリへの変更を取り消す
 git reset HEAD . ：全変更取り消し
+git branch -a :ブランチの情報を取得
 HEADとは最新のコミットのこと
 
 「git switch」は、ブランチの変更に使用され、「git restore」はファイルの変更に使用される役割があります。
@@ -55,4 +56,20 @@ git fetch リモート名　：fetch（とってくる）
 ローカルリポジトリの以下の場所に情報を取得してくる
 remotes/リモート/ブランチ
 ワークツリーに反映させるコマンドはgit merge
+
+
+リモートリポジトリからの情報取得pull
+git pull リモート名 ブランチ名　：リモートから情報を取得してマージまで行う
+git fetch、git mergeの両方を行う
+現在のブランチにマージしてしまうため注意が必要のため、fetchがおすすめ
+
+リモートの情報を確認
+git remote show リモート名 :FetchとPushのURL、リモートブランチなどが表示される
+
+リモート名を変更、削除
+git remote rename 旧リモート名 新リモート名　：変更
+git remote rm リモート名　：削除
+
+
+並行して複数機能を開発する仕組みがブランチ
 
