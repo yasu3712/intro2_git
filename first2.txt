@@ -40,3 +40,19 @@ HEADとは最新のコミットのこと
 直前のコミットをやり直す
 git commit --amend　：リモートリポジトリにPushしたコミットはやり直さない。ダウンロードしている人がいるかもしれないから
 amend 改める
+
+リモート
+git remote
+git remote -v :URL表示。fetchとpushが表示される
+
+
+リモートリポジトリを新規追加
+git remote add リモート名 リモートURL
+
+
+リモートリポジトリからの情報取得fetch
+git fetch リモート名　：fetch（とってくる）
+ローカルリポジトリの以下の場所に情報を取得してくる
+remotes/リモート/ブランチ
+ワークツリーに反映させるコマンドはgit merge
+
